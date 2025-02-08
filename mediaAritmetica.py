@@ -9,13 +9,6 @@ while True:
         lista.append(novoNumero)
 
 def mediaAritmetica(lista):
-    tamanho = 0
-    soma = 0
-    for item in lista:
-        tamanho += 1
-    for numero in lista:
-        soma += numero
-
-    return print(soma / tamanho)
+    return print(sum(lista) / len(lista))
 
 mediaAritmetica(lista)
